@@ -176,7 +176,7 @@ body{
 .aboutUsSection .aboutUs h2{
     font-size: 34px;
 }
-.btns{
+.aboutUsSection .btns{
     display: grid;
     place-items: end;
 
@@ -186,7 +186,7 @@ body{
 
 }
 
-.btns a{
+.aboutUsSection .btns a{
     cursor: pointer;
     /* border: 1px solid red; */
     display: flex;
@@ -198,10 +198,80 @@ body{
 
 }
 
-.btns a:hover {
+.aboutUsSection .btns a:hover {
     gap: 1rem;
     font-weight: 700;
 }
+
+
+/*---------------------------------------------- history section styles --------------------------------------------*/
+
+.historySection{
+    height: 50vh;
+    display: grid;
+    place-items: center;
+
+    gap: 20px;
+
+    margin: 10% 0;
+}
+
+.historySection h2{
+    font-size: 34px;
+    text-align: center;
+}
+
+.historyContent{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    gap: 5%;
+}
+
+.historyQuote{
+    width: 40%;
+    display: grid;
+    place-items: end center;
+}
+.historyQuote h2{
+    font-size: 49px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.history {
+    width: 55%;
+}
+.history p{
+    text-align: left;
+}
+
+
+.historySection .historyContent .history .btns{
+    display: grid;
+    place-items: end;
+
+    width: 100%;
+    margin-top: 5%;
+}
+
+.historySection .historyContent .history .btns a{
+    cursor: pointer;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+	transition:.2s ease-in-out;
+
+    font-size: 16px;
+}
+
+.historySection .historyContent .history .btns a:hover{
+    gap: 1rem;
+    font-weight: 700;
+}
+
+
 
 
 /*------------------------------------------Responsive Design----------------------------------------*/
@@ -216,7 +286,7 @@ body{
         width: 80%;
     }
 
-    .aboutUsSection .aboutUs h2{
+    .aboutUsSection .aboutUs h2, .historySection h2{
         font-size: 24px;
     }
 
@@ -227,6 +297,29 @@ body{
     .btns a{
         font-size: 14px;
     }
+
+    /* history */
+    .historyContent{
+        flex-direction:  column;
+        gap: 20px;
+    }
+
+    .historyQuote{
+        width: 100%;
+        place-items: center;
+    }
+    .historyQuote h2{
+        font-size: 34px;
+    }
+
+    .history{
+        width: 100%;
+    }
+
+    .historySection .historyContent .history .btns{
+        place-items: start;
+    }
+
 }
 
 /* @media screen and (max-width:425px){} */
