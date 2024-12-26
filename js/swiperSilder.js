@@ -6,7 +6,6 @@ var swiper = new Swiper(".slide-content", {
       delay: 3000,
       disableOnInteraction: false
     },
-   
     centerSlide: 'true',
     fade: 'true',
     grabCursor: 'true',

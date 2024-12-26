@@ -23,6 +23,12 @@
     font-size: 34px;
 }
 
+.specialOffers h2 span{
+  font-size: 14px;
+  font-weight: 200;
+  text-decoration: overline;
+}
+
 .slider{
     width: 100%;
     height: 90%;
