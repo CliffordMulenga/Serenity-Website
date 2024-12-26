@@ -1,0 +1,156 @@
+header{
+    width: 100%;
+    /* border: 1px solid red; */
+    
+    z-index: 1000;
+    position: relative;
+    
+}
+.headerSection{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    /* padding: 2%; */
+    position: fixed;
+    background-color:#f1f5f8be;
+    backdrop-filter: blur(3px);
+
+    color: var(--copy);
+}
+.header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 10%;
+}
+.logo img{
+    width: 100%;
+}
+.menu{
+    width: 50%;
+    display: flex;
+    gap: 4%;
+    justify-content: end;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.menu ul li{
+    width: max-content;
+}
+.menu ul li a{
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    max-width: max-content;
+}
+
+.menu ul li a:hover{
+    color: var(--bgColor2);
+}
+
+.menu .navMenu{
+    display: none;
+    
+}
+.navMenu img{
+    width: 1.5rem;
+}
+.menu{
+    position: relative;
+}
+
+/* this will only take effect on mobile */
+.mobileNavBarContent{
+    position: absolute;
+    /* display: none; */
+    width: 70%;
+    height: 100vh;
+    right: -100%;
+    top: 0;
+    background-color:hsla(237, 91%, 13%, 0.984);
+    backdrop-filter: blur(3px);
+    /* border: 1px solid red; */
+
+    padding: 5%;
+    display: grid;
+    place-items:center start;
+    
+    transition: right 1s ease-in-out; 
+
+}
+
+
+.navContent ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+
+    margin-bottom: 3rem;
+}
+.navContent a{
+    color: #fff;
+
+}
+.navContent ul li a{
+    font-size: 2rem;
+    font-weight: 900;
+    }
+.navContent{
+    width: 80%;
+    height: 50%;
+}
+
+
+/*------------------------------------------Responsive Design----------------------------------------*/
+/* @media(max-width: 1440px){} */
+
+@media (max-width: 1024px) {
+    .navContent ul li
+}
+
+/*-------------------------------------------Mobile & Tablet-----------------------------------------*/
+
+@media (max-width: 768px) {
+    .menu .navMenu{
+        display: grid;
+        place-items: center;
+    }
+
+    .menu ul,.ctaArea{
+        display: none;
+    }
+
+    .navClose{
+        margin-top: 10%;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    
+}
+
+@media(max-width:425px){
+    .mobileNavBarContent{
+        width: 70%;
+    }
+    .logo{
+        width: 30%;
+    }
+
+}
+
+
+/*--------------------------------------------Small Mobile-------------------------------------------*/
+
+/* @media(max-width:375px){} */
+
+/* @media(max-width:320px){} */
