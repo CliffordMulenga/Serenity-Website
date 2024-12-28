@@ -106,6 +106,13 @@
 
     width: 70%;
 }
+
+.card .watchVideo{
+  margin: 3% 0 0 5%;
+  text-decoration: underline;
+  color: var(--beige);
+  text-decoration-color: var(--beige);
+}
   /*  .swiper-navBtn {
     color: var(--bgRed);
     transition: color 0.3s ease;
