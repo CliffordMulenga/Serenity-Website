@@ -27,6 +27,8 @@
 .specialOffers h2{
     height: 10%;
     font-size: 34px;
+
+    color: var(--beige);
 }
 
 .specialOffers h2 span{
