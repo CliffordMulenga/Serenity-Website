@@ -60,10 +60,12 @@ a{
 
     /* color variables */
 
-    --yellow: rgb(255, 255, 78);
+    --yellow: #87b6c8;
+
+    --beige: #f3eadd;
 }
 body{
-    background: #F1EDF8;
+    background: var(--beige);
 }
 
 /*------------------------------------------Responsive Design----------------------------------------*/
@@ -83,6 +85,44 @@ body{
 /* @media(max-width:375px){} */
 
 /* @media(max-width:320px){} */
+
+
+
+header{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width:100%;
+}
+
+header img{
+    width:125px;
+    border-bottom: 1px solid var(--beige);
+    padding-bottom: 5px;
+
+    margin-top: 40px;
+
+}
+
+footer{
+    margin: 0 0 2% 5%;
+}
+
+footer p a{
+    text-decoration: overline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*---------------------------------------------- Hero section styles --------------------------------------------*/
 
